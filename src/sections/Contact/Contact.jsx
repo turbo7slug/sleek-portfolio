@@ -4,7 +4,11 @@ function Contact() {
   return (
     <section id="contact" className={styles.container}>
       <h1 className="sectionTitle">Contact</h1>
-      <form action="">
+      <form
+        action="mailto:mohdyusufhesam@gmail.com"
+        method="POST"
+        encType="text/plain"
+      >
         <div className="formGroup">
           <label htmlFor="name" hidden>
             Name
@@ -22,7 +26,7 @@ function Contact() {
             Email
           </label>
           <input
-            type="text"
+            type="email"
             name="email"
             id="email"
             placeholder="Email"
@@ -37,7 +41,8 @@ function Contact() {
             name="message"
             id="message"
             placeholder="Message"
-            required></textarea>
+            required
+          ></textarea>
         </div>
         <input className="hover btn" type="submit" value="Submit" />
       </form>
